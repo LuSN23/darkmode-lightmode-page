@@ -4,6 +4,16 @@ function changeMode() {
     changeText();
 }
 
+//Função para mudar as classes dos elementos html
+function changeClass() {
+    h1.classList.toggle(darkModeClass);
+    button.classList.toggle(darkModeClass);
+    footer.classList.toggle(darkModeClass);
+    body.classList.toggle(darkModeClass);
+}
+
+//Adicionando constante que contém a classe dark-mode
+const darkModeClass = 'dark-mode';
 //Selecionando os elementos html e armazenando-os em variáveis
 const h1 = document.getElementById('page-title');
 const button = document.getElementById('mode-selector');
