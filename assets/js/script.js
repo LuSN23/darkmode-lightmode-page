@@ -1,3 +1,9 @@
+//Função callback que chama as outras 2 funções para mudar entre os modos dark e light
+function changeMode() {
+    changeClass();
+    changeText();
+}
+
 //Selecionando os elementos html e armazenando-os em variáveis
 const h1 = document.getElementById('page-title');
 const button = document.getElementById('mode-selector');
