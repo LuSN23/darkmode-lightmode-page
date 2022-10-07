@@ -12,6 +12,20 @@ function changeClass() {
     body.classList.toggle(darkModeClass);
 }
 
+//Função para mudar o texto do button e do h1
+function changeText() {
+    const lightMode = 'Light Mode';
+    const darkMode = 'Dark Mode';
+    if(body.classList.contains(darkModeClass)){
+        button.innerHTML = lightMode;
+        h1.innerHTML = darkMode + ' ON';
+        return; //Para sair depois de clicado 1 vez e poder ser utilizado novamente
+    }
+    //Aqui está em lightMode
+    button.innerHTML = darkMode;
+    h1.innerHTML = lightMode + ' ON';
+}
+
 //Adicionando constante que contém a classe dark-mode
 const darkModeClass = 'dark-mode';
 //Selecionando os elementos html e armazenando-os em variáveis
